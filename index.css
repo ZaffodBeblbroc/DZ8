@@ -1,5 +1,15 @@
+body {
+  margin: 0px;
+}
+
 .images {
-  display: none;
+  width: 250px;
+  height: 180px;
+  position: absolute;
+  right: -125px;
+  top: -90px;
+  border-width: 4px;
+  border-style: solid;
 }
 
 h1 {
@@ -9,7 +19,8 @@ h1 {
 }
 
 section {
-  margin: 100px 50px;
+  position: relative;
+  margin: 100px 150px;
   padding: 50px;
   border-width: 4px;
   border-style: solid solid dashed dashed;
@@ -24,6 +35,21 @@ section > h2 {
   font-weight: bold;
 }
 
+.color1 li:nth-child(even) {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+.color2 ul li:nth-child(odd) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+}
+
+.color3 ul li:nth-child(3n) {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
 ol + p {
   margin: 100px 0px 0px 0px;
   font-style: oblique;
@@ -31,20 +57,23 @@ ol + p {
   text-align: center;
 }
 
-.color1 {  
-  background-color: rgba(119, 0, 255, 0.5);
+.color1,
+.color1 .images {  
+  background-color: rgba(119, 0, 255, 0.3);
   border-color:  rgba(119, 0, 255, 0.5);  
 }
 
 .color1  h2, 
 .color1  h3,
 .color1 .letter:first-letter,
-.color1 ul li:nth-child(odd) {
+.color1 li:nth-child(even),
+.color1 li:nth-child(even) {
   color:  rgba(119, 0, 255, 0.7);
 }
 
-.color2 {  
-  background-color: rgba(255,0 ,0 , 0.5);
+.color2,
+.color2 .images {  
+  background-color: rgba(255,0 ,0 , 0.3);
   border-color:  rgba(255,0 ,0 , 0.5);  
 }
 
@@ -55,14 +84,15 @@ ol + p {
   color:  rgba(255,0 ,0 , 0.7);
 }
 
-.color3 {  
-  background-color: rgba(18, 107, 0, 0.466);
+.color3,
+.color3 .images {  
+  background-color: rgba(18, 107, 0, 0.3);
   border-color:  rgba(18, 107, 0, 0.5);
 }
 
 .color3  h2, 
 .color3  h3,
 .color3 .letter:first-letter,
-.color3 ul li:nth-child(odd) {
+.color3 ul li:nth-child(3n) {
   color:  rgba(18, 107, 0, 0.7);
 }
