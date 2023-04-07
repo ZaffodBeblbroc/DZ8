@@ -1,0 +1,68 @@
+.images {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+section {
+  margin: 100px 50px;
+  padding: 50px;
+  border-width: 4px;
+  border-style: solid solid dashed dashed;
+}
+
+section > h2 {
+  text-decoration-line: underline;
+}
+
+.letter:first-letter {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+ol + p {
+  margin: 100px 0px 0px 0px;
+  font-style: oblique;
+  text-decoration-line: overline;
+  text-align: center;
+}
+
+.color1 {  
+  background-color: rgba(119, 0, 255, 0.5);
+  border-color:  rgba(119, 0, 255, 0.5);  
+}
+
+.color1  h2, 
+.color1  h3,
+.color1 .letter:first-letter,
+.color1 ul li:nth-child(odd) {
+  color:  rgba(119, 0, 255, 0.7);
+}
+
+.color2 {  
+  background-color: rgba(255,0 ,0 , 0.5);
+  border-color:  rgba(255,0 ,0 , 0.5);  
+}
+
+.color2  h2, 
+.color2  h3,
+.color2 .letter:first-letter,
+.color2 ul li:nth-child(odd) {
+  color:  rgba(255,0 ,0 , 0.7);
+}
+
+.color3 {  
+  background-color: rgba(18, 107, 0, 0.466);
+  border-color:  rgba(18, 107, 0, 0.5);
+}
+
+.color3  h2, 
+.color3  h3,
+.color3 .letter:first-letter,
+.color3 ul li:nth-child(odd) {
+  color:  rgba(18, 107, 0, 0.7);
+}
